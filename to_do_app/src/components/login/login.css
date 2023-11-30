@@ -1,1 +1,37 @@
-.Login {}
+body{
+    background: url(https://i2.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/06/Fondos-de-pantalla-de-paisajes-naturales25.jpg);
+}
+.login h1{
+    color: beige;
+}
+.login {
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    margin:10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1em;
+    border-radius: 1em;
+    border: .1px solid white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 .9em 2em 0 black;
+    
+}
+.login::before{
+    opacity: .7px;
+}
+.login img{
+    width: 20em;
+    height: auto;
+    float: left;
+    margin: -10px;
+
+}
+.login a{
+    color: beige;
+    text-decoration: none;
+}
+.login button{
+    margin-bottom: 8px;
+}

@@ -4,6 +4,7 @@ import './register.css';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from "axios";
+import Avatar from '@mui/material/Avatar';
 
 const Register = () => {
   const [formValues, setFormValues] = React.useState({
@@ -58,6 +59,7 @@ const Register = () => {
   return (
   <div className="register" data-testid="Register">
     <h1>Registro de usuario</h1>
+     <Avatar src="/broken-image.jpg" style={{ width: '100px', height: '100px', margin: 'auto' }} />
     <TextField id="outlined-basic" name='Email' label="Email" variant="outlined"  onChange={onChange} required/> <br/><br/>
     <TextField id="outlined-basic" name='Username' label="Nombre de Usuario" variant="outlined" onChange={onChange} required/><br/><br/>
     <TextField id="outlined-basic" type='password' name='Password1' label="Contraseña" variant="outlined" onChange={onChange} required/><br/><br/>

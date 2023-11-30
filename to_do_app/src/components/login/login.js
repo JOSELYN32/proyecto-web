@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import './login.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import imgNotaLog from '../../assets/img/imgNotaLog.png';
 
 const Login = () => {
   const [user, setUser] = React.useState({
@@ -57,6 +58,7 @@ const Login = () => {
   <div className="login" data-testid="Login">
     <h1>Inicio de Sesión</h1>
     <br/>
+    <img src={imgNotaLog} alt="Imagen representativa de notas"/>
     <TextField id="user-input" name="username" label="Usuario" variant="outlined" onChange={onChangeInput} />
     <br/><br/>
     <TextField id="pass-input" name="password" label="Contraseña" variant="outlined" onChange={onChangeInput}/>
